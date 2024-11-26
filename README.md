@@ -1,6 +1,8 @@
+# AI-X딥러닝 프로젝트 
 타이타닉에서의 생존 확률은?
+실내건축디자인 곽려봉 2017075632
 
-AX-딥러닝 프로젝트 곽려봉 2017075632
+# CONTENTS
 1. Introduction
     1.1 Load and check data
 2. Feature Engineering
