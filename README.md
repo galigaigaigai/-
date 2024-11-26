@@ -32,8 +32,8 @@
 
 1.1 Load and check data
 #Load packages
-library'ggplot2' # visualization
-library('ggthemes') # visualization
+library（'ggplot2'）# visualization
+library（'ggthemes'）# visualization
 library('scales') # visualization
 library('dplyr') # data manipulation
 library('mice') # imputation
@@ -75,9 +75,9 @@ Embarked	Port of embarkation
 
 # 2. Feature Engineering
     2.1 What’s in a name?
+나의 관심을 끌었던 첫 번째 변수는 passenger name이었는데, 예측에 사용하거나 다른 새로운 변수를 만드는 데 사용할 수 있는 다른 의미 있는 변수로 분해할 수 있었기 때문입니다. 예를 들어 승객 이름이 승객 이름 변수에 포함되어 있으면 성을 사용하여 가족을 나타낼 수 있습니다. 기능공학을 좀 합시다!
 
-
-   2.2 Do families sink or swim together?
+    2.2 Do families sink or swim together?
     2.3 Treat a few more variables …
 # 3. Missingness
     3.1 Sensible value imputation
