@@ -30,7 +30,7 @@
 # 1. Introduction
 저는 타이타닉 데이터 세트를 사용하기로 결정했고, 그 전에 웹사이트를 둘러보고 영감을 얻기 위해 다른 시나리오들을 살펴보는 데 시간을 보냈습니다. 저는 또한 길을 따라 몇 가지 설명적인 데이터를 시각화하는 데 집중할 것입니다. 그런 다음 무작위 숲을 ，사용하여 타이타닉의 생존을 예측하는 모델을 만들었습니다.
 
-1.1 Load and check data
+# 1.1 Load and check data
 
 #Load packages
 library（'ggplot2'）# visualization
@@ -80,7 +80,7 @@ Embarked	Port of embarkation
 
 # 2. Feature Engineering
     
-    2.1 What’s in a name?
+ # 2.1 What’s in a name?
 나의 관심을 끌었던 첫 번째 변수는 passenger name이었는데, 예측에 사용하거나 다른 새로운 변수를 만드는 데 사용할 수 있는 다른 의미 있는 변수로 분해할 수 있었기 때문입니다. 예를 들어 승객 이름이 승객 이름 변수에 포함되어 있으면 성을 사용하여 가족을 나타낼 수 있습니다. 기능공학을 좀 합시다!
 
     2.2 Do families sink or swim together?
