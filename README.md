@@ -68,7 +68,8 @@ Now that our packages are loaded, let’s read in and take a peek at the data.
 
 이제 승객 이름을 몇 가지 새로운 변수로 분할하는 작업을 처리했으니 한 걸음 더 나아가 몇 가지 새로운 가족 변수를 만들 수 있습니다. 먼저 형제/배우자 수(배우자가 두 명 이상일 수도 있나요?)와 자녀/부모 수를 기준으로 가족 크기 변수를 만들겠습니다.
    
-    ![image](https://github.com/user-attachments/assets/2c466179-0b35-4da5-8ead-b2d1b365b709)
+![image](https://github.com/user-attachments/assets/e812fe11-172a-44ed-8dbf-41ac4b710fe7)
+
 
 가족 크기 변수는 어떻게 생겼나요? 생존과 어떤 관련이 있는지 이해하는 데 도움이 되도록 훈련 데이터에 표시해 보겠습니다.
 
@@ -101,9 +102,22 @@ Now that our packages are loaded, let’s read in and take a peek at the data.
 여기에는 여러 개의 방이 나열된 캐빈(예: 28열: "C23 C25 C27")을 살펴보는 것을 포함하여 더 많은 작업을 수행할 수 있지만, 칼럼의 희소성을 고려할 때 여기에서 멈출 것입니다.
 
 # 3. Missingness
+이제 누락된 데이터를 탐색하고 귀책을 통해 수정할 준비가 되었습니다. 이 작업을 수행하는 데는 여러 가지 방법이 있습니다. 데이터 세트의 크기가 작기 때문에 전체 관측값(행)이나 누락된 값이 포함된 변수(열) 중 하나를 삭제하는 것을 선택해서는 안 됩니다. 데이터의 분포(예: 평균, 중앙값 또는 모드)를 고려할 때 누락된 값을 합리적인 값으로 대체할 수 있는 옵션이 남아 있습니다. 마지막으로 예측을 수행할 수 있습니다. 후자의 두 가지 방법을 모두 사용할 것이며, 결정을 유도하기 위해 몇 가지 데이터 시각화에 의존할 것입니다.
     3.1 Sensible value imputation
+![image](https://github.com/user-attachments/assets/64fa4380-f552-4580-8a64-4e25e8566d9d)
+
+![image](https://github.com/user-attachments/assets/2ac691cf-477e-432a-b859-f5a5e45e1258)
+
+![image](https://github.com/user-attachments/assets/7186f464-6a81-445a-980f-d609a1a84868)
+
+우리는 이러한 데이터를 기반으로 시작할 수 있는 프레젠테이션 데이터를 추론할 수 있는 현재의 데이터를 추론할 수 있습니다.우리는 그들이 각각 80달러를 지불했고, NNA를 각각 1과 NA. 그래서 그들이 출발했던 곳부터 시작했나요?
+
+![image](https://github.com/user-attachments/assets/b0295916-6195-42c8-91d9-094b94152b94)
+
     3.2 Predictive imputation
+    
     3.3 Feature Engineering: Round 2
+    
 # 4. Prediction
     4.1 Split into training & test sets
     4.2 Building the model
