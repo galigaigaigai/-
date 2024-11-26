@@ -1,23 +1,29 @@
 # AI-X딥러닝 프로젝트 
 타이타닉에서의 생존 확률은?
-실내건축디자인 곽려봉 2017075632
+# Members
+실내건축디자인 곽려봉 2017075632 EMAIL:guolifeng917@gmail.com
+
 
 # CONTENTS
 1. Introduction
     1.1 Load and check data
+
 2. Feature Engineering
     2.1 What’s in a name?
     2.2 Do families sink or swim together?
     2.3 Treat a few more variables …
+
 3. Missingness
     3.1 Sensible value imputation
     3.2 Predictive imputation
     3.3 Feature Engineering: Round 2
+
 4. Prediction
     4.1 Split into training & test sets
     4.2 Building the model
     4.3 Variable importance
     4.4 Prediction!
+
 5. Conclusion
 
 
