@@ -83,6 +83,41 @@ Embarked	Port of embarkation
  # 2.1 What’s in a name?
 나의 관심을 끌었던 첫 번째 변수는 passenger name이었는데, 예측에 사용하거나 다른 새로운 변수를 만드는 데 사용할 수 있는 다른 의미 있는 변수로 분해할 수 있었기 때문입니다. 예를 들어 승객 이름이 승객 이름 변수에 포함되어 있으면 성을 사용하여 가족을 나타낼 수 있습니다. 기능공학을 좀 합시다!
 
+# Grab title from passenger names
+full$Title <- gsub('(.*, )|(\\..*)', '', full$Name)
+
+# Show title counts by sex
+table(full$Sex, full$Title)
+##         
+##          Capt Col Don Dona  Dr Jonkheer Lady Major Master Miss Mlle Mme
+##   female    0   0   0    1   1        0    1     0      0  260    2   1
+##   male      1   4   1    0   7        1    0     2     61    0    0   0
+##         
+##           Mr Mrs  Ms Rev Sir the Countess
+##   female   0 197   2   0   0            1
+##   male   757   0   0   8   1            0
+# Titles with very low cell counts to be combined to "rare" level
+rare_title <- c('Dona', 'Lady', 'the Countess','Capt', 'Col', 'Don', 
+                'Dr', 'Major', 'Rev', 'Sir', 'Jonkheer')
+
+# Also reassign mlle, ms, and mme accordingly
+full$Title[full$Title == 'Mlle']        <- 'Miss' 
+full$Title[full$Title == 'Ms']          <- 'Miss'
+full$Title[full$Title == 'Mme']         <- 'Mrs' 
+full$Title[full$Title %in% rare_title]  <- 'Rare Title'
+
+# Show title counts by sex again
+table(full$Sex, full$Title)
+##         
+##          Master Miss  Mr Mrs Rare Title
+##   female      0  264   0 198          4
+##   male       61    0 757   0         25
+# Finally, grab surname from passenger name
+full$Surname <- sapply(full$Name,  
+                      function(x) strsplit(x, split = '[,.]')[[1]][1])
+cat(paste('We have <b>', nlevels(factor(full$Surname)), '</b> unique surnames. I would be interested to infer ethnicity based on surname --- another time.'))
+We have 875 unique surnames. I would be interested to infer ethnicity based on surname — another time.
+
     2.2 Do families sink or swim together?
     2.3 Treat a few more variables …
 # 3. Missingness
