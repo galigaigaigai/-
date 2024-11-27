@@ -89,15 +89,15 @@ Now that our packages are loaded, let’s read in and take a peek at the data.
 
     남은 것은 무엇인가요? 승객실 변수에는 갑판에 대한 정보를 포함하여 잠재적으로 유용한 정보가 있을 것입니다. 살펴보겠습니다.
 
-    ![image](https://github.com/user-attachments/assets/089a1f36-9791-4202-a93a-3434ddb539fc)
+   ![image](https://github.com/user-attachments/assets/089a1f36-9791-4202-a93a-3434ddb539fc)
     
-    ![image](https://github.com/user-attachments/assets/20f5ecc9-db1b-46ac-8960-3add7cf43f9f)
+   ![image](https://github.com/user-attachments/assets/20f5ecc9-db1b-46ac-8960-3add7cf43f9f)
 
-    ![image](https://github.com/user-attachments/assets/689fd797-89e3-4932-b24e-f43b88736002)
+   ![image](https://github.com/user-attachments/assets/689fd797-89e3-4932-b24e-f43b88736002)
 
-    ![image](https://github.com/user-attachments/assets/ebf78517-74b8-442c-8ea4-b32a0fdaa0c8)
+   ![image](https://github.com/user-attachments/assets/ebf78517-74b8-442c-8ea4-b32a0fdaa0c8)
 
-    ![image](https://github.com/user-attachments/assets/9fc94009-e030-45e8-bfe8-66f0f7a93d70)
+   ![image](https://github.com/user-attachments/assets/9fc94009-e030-45e8-bfe8-66f0f7a93d70)
 
 여기에는 여러 개의 방이 나열된 캐빈(예: 28열: "C23 C25 C27")을 살펴보는 것을 포함하여 더 많은 작업을 수행할 수 있지만, 칼럼의 희소성을 고려할 때 여기에서 멈출 것입니다.
 
